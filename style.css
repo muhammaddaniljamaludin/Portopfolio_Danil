@@ -1,0 +1,297 @@
+/* Reset Umum dan Gaya Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f4f1; /* Latar belakang terang */
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #466b6e; /* Biru kehijauan yang menenangkan */
+}
+
+.navbar .navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #a3d5d3; /* Efek hover yang lebih lembut */
+  border-radius: 4px;
+}
+
+/* Gaya Jumbotron (Bagian Intro) */
+.jumbotron {
+  color: rgb(15, 12, 12);
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.jumbotron img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.jumbotron p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.jumbotron svg {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Gaya Bagian Tentang (About) */
+#about {
+  margin-top: -10px;
+  background-color: #e0f4f1; /* Latar belakang abu-abu lembut */
+  padding: 4rem 0;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #181818;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+#about .container {
+  max-width: 1100px;
+}
+
+#project {
+  background-color: #e0f4f1; /* Biru kehijauan yang sangat terang */
+  color: #fffafa;
+  padding: 4rem 0;
+}
+
+#project h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Gaya Modal */
+.modal-dialog {
+  max-width: 600px;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background-color: #466b6e;
+  color: #ffffff;
+  border-bottom: 2px solid #ddd;
+  padding: 1.25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-body {
+  color: #000000;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 1.5rem;
+}
+
+/* Gaya Kartu */
+.card {
+  border: none;
+  padding-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  background-color: #466b6e;
+  padding: 1.5rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Gaya Bagian Kontak */
+#contact {
+  background-color: #e0f4f1; /* Latar belakang abu-abu terang */
+  padding: 4rem 0;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  color: #020202;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #0a0202;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: #466b6e;
+  box-shadow: 0 0 5px rgba(91, 138, 142, 0.5);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.btn-kirim {
+  width: 100%;
+  background-color: #466b6e;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-kirim:hover {
+  background-color: #466b6e; /* Teal lebih gelap saat hover */
+}
+
+.btn-loading {
+  width: 100%;
+  padding: 1rem;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: not-allowed;
+}
+
+.my-alert {
+  background-color: #28a745;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  display: none;
+}
+
+.my-alert button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Gaya Footer */
+footer {
+  background-color: #466b6e;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: white;
+  font-weight: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .social-links {
+  margin-top: 1rem;
+}
+
+footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: #466b6e;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+    color: white;
+  }
+
+  .form-control, .btn-kirim {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
